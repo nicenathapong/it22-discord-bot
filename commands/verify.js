@@ -99,7 +99,7 @@ module.exports = {
 
         const modalInteraction = await interaction
             .awaitModalSubmit({
-                time: 30_000,
+                time: 300_000,
                 filter: (i) => i.customId === modalCustomId,
             })
             .then((res) => res)

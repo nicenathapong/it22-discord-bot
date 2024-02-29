@@ -44,6 +44,18 @@ module.exports = {
                               description: student.note,
                           }
                         : {}),
+                        fields: [
+                            {
+                                name: "สาขา",
+                                value: student.program,
+                                inline: true
+                            },
+                            {
+                                name: "โครงการ",
+                                value: student.project,
+                                inline: true
+                            }
+                        ],
                     footer: {
                         text: `ยืนยันตัวตนเมื่อ ${student.verifiedAt.toLocaleString()}`,
                     },
